@@ -1,0 +1,74 @@
+﻿@model Lesson7.Models.LtkdSinhVien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LtkdSinhVien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdHoSV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdHoSV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdTenSV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdTenSV)
+        </dd>
+        <a href="~/Views/LtkdSinhViens/Edit.cshtml">~/Views/LtkdSinhViens/Edit.cshtml</a>
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdNgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdNgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdPhai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdPhai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LtkdMaKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LtkdMaKH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LtkdMaSV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Lesson7.Models.LtkdSinhVien>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdHoSV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdTenSV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdNgaySinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdPhai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LtkdMaKH)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdHoSV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdTenSV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdNgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdPhai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LtkdMaKH)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LtkdMaSV }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LtkdMaSV }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LtkdMaSV })
+        </td>
+    </tr>
+}
+
+</table>
